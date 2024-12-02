@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Alpaka menu</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__container container">
+				<a class="header__logo" href="#">
+					<svg class="header__logo-img" xmlns="http://www.w3.org/2000/svg" width="29" height="13" viewBox="0 0 29 13" fill="none">
+						<path
+							d="M5.46199 3.64C6.51799 3.64 7.33999 3.904 7.92799 4.432C8.51599 4.96 8.80999 5.824 8.80999 7.024V13H6.12799V7.582C6.12799 6.43 5.55199 5.854 4.39999 5.854C4.12399 5.854 3.84199 5.896 3.55399 5.98C3.26599 6.064 3.04399 6.166 2.88799 6.286L2.85199 13H0.187988V0.291999H2.88799V4.306C3.71599 3.862 4.57399 3.64 5.46199 3.64Z"
+							fill="white"
+						/>
+						<path d="M11.0659 10.462H13.6759V13H11.0659V10.462Z" fill="white" />
+						<path
+							d="M16.4111 13V-0.0078125H18.9687L22.5723 10.0557L26.2812 -0.0078125H28.5664V13H26.8437V2.41797L23.2578 12.1299H21.4736L17.9932 2.3916V13H16.4111Z"
+							fill="white"
+						/>
+					</svg>
+				</a>
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
+						<li class="menu__item has-sub-menu">
+							<a class="menu__link" href="#">Основное меню</a>
+							<ul class="menu__sub-list">
+								<li class="menu__sub-item">
+									<a class="menu__sub-link" href="#">Заказать вёрстку</a>
+								</li>
+								<li class="menu__sub-item">
+									<a class="menu__sub-link" href="#">Отправить макет на проверку</a>
+								</li>
+								<li class="menu__sub-item">
+									<a class="menu__sub-link" href="#">Хочу работать у вас</a>
+								</li>
+								<li class="menu__sub-item has-sub-menu">
+									<a class="menu__sub-link" href="#">Есть предложение по работе с клиентами</a>
+									<ul class="menu__sub-list menu__sub-list--2">
+										<li class="menu__sub-item menu__sub-item--deep">
+											<a class="menu__sub-link" href="#">У меня есть оффер</a>
+										</li>
+										<li class="menu__sub-item menu__sub-item--deep">
+											<a class="menu__sub-link" href="#">Сделать партнёром</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__item"><a class="menu__link" href="#">Наши сервисы</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+
+						<li class="menu__item"><a class="menu__link" href="#">Наши сервисы</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+					</ul>
+				</nav>
+
+				<div class="header__phone">
+					<a class="header__phone-link" href="tel:+13212223333">
+						<img class="header__phone-icon" src="src/images/phone.svg" alt="" />
+						<span class="header__phone-text">+1 (321) 222 - 33 -33</span>
+					</a>
+				</div>
+
+				<div class="header__burger">
+					<div class="header__burger-line header__burger-line-1"></div>
+					<div class="header__burger-line header__burger-line-2"></div>
+					<div class="header__burger-line header__burger-line-3"></div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="main-section">
+				<picture class="main-section__picture">
+					<source srcset="/src/images/alpaca.avif" type="image/avif" />
+					<source srcset="/src/images/alpaca.webp" type="image/webp" />
+					<img src="/src/images/alpaca.jpg" alt="alpaca" />
+				</picture>
+			</section>
+		</main>
+		<script type="module" src="/src/js/main.js" defer></script>
+	</body>
+</html>
